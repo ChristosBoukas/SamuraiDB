@@ -58,6 +58,7 @@ namespace SamuraiDB.Data
 
                             // Add one samurai to the current battle
                             battle.Samurais.Add(samuraiList[0]);
+                            context.Battles.Add(battle);
                             samuraiList.RemoveAt(0); // Remove the added samurai from the samurai list
                         }
                     }
