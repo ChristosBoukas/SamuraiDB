@@ -10,7 +10,7 @@ namespace SamuraiDB
             
             DataAccess dataAccess = new DataAccess();
 
-            dataAccess.Seed();
+            //dataAccess.Seed();
             Console.WriteLine("Finished");
             Console.ReadLine();
         }

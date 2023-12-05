@@ -12,8 +12,8 @@ using SamuraiDB.Data;
 namespace SamuraiDB.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20231201131509_new2")]
-    partial class new2
+    [Migration("20231205122900_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
