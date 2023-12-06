@@ -15,6 +15,8 @@ namespace SamuraiDB.Models
         public enHairstyle Hairstyle { get; set; }
         public ICollection<Battle> Battles { get; set; } = new List<Battle>();
 
+        public SecretIdentity SecretIdentity { get; set; }
+
         public Samurai()
         {
             

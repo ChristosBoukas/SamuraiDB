@@ -19,15 +19,15 @@ namespace SamuraiDB.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //optionsBuilder.UseSqlServer(@"
-            //    Server=localhost;
-            //    Database=SamuraiDB;
-            //    Trusted_Connection=true;
-            //    Trust Server Certificate=yes;
-            //    User Id=SamuraiDB;
-            //    password=SamuraiDB");
+            optionsBuilder.UseSqlServer(@"
+                Server=localhost;
+                Database=SamuraiDB;
+                Trusted_Connection=true;
+                Trust Server Certificate=yes;
+                User Id=SamuraiDB;
+                password=SamuraiDB");
 
-            optionsBuilder.UseSqlServer(@"Server=tcp:samuraidbtest.database.windows.net,1433;Initial Catalog=FirstDBTest;Persist Security Info=False;User ID=christos;Password=samuraidbtest123!!!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            //optionsBuilder.UseSqlServer(@"Server=tcp:samuraidbtest.database.windows.net,1433;Initial Catalog=FirstDBTest;Persist Security Info=False;User ID=christos;Password=samuraidbtest123!!!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
         }
     }
 }

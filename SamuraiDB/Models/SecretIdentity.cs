@@ -13,5 +13,11 @@ namespace SamuraiDB.Models
         public string SecretName { get; set; }
         public Samurai Samurai { get; set; }
 
+
+        public SecretIdentity()
+        {
+            
+        }
+
     }
 }
